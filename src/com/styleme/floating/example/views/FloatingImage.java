@@ -37,8 +37,7 @@ public class FloatingImage extends ImageView implements OnTouchListener {
 		params = new WindowManager.LayoutParams(
 				WindowManager.LayoutParams.WRAP_CONTENT,
 				WindowManager.LayoutParams.WRAP_CONTENT,
-				PixelFormat.TRANSLUCENT); // assigning height/width to the
-											// imageView
+				PixelFormat.TRANSLUCENT); // assigning height/width to the imageView
 		params.flags = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
 				| WindowManager.LayoutParams.FLAG_LAYOUT_INSET_DECOR
 				| WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM; // assigning some flags to the layout
@@ -96,7 +95,7 @@ public class FloatingImage extends ImageView implements OnTouchListener {
 			windowManager.updateViewLayout(this, paramsF);
 			break;
 		}
-		return false; // returning false otherwise any touch even on the imageView wont work.
+		return false; // returning false otherwise any touch event on the imageView wont work.
 	}
 
 	private class GestureListener extends
