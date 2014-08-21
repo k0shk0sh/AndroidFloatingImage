@@ -18,8 +18,7 @@ public class FloatingImage extends ImageView implements OnTouchListener {
 	WindowManager windowManager; // to hold our image on screen
 	Context ctx; // context so in case i use it somewhere.
 	GestureDetector gestureDetector; // to detect some listener on the image.
-	WindowManager.LayoutParams params; // layoutParams where i set the image
-										// height/width and other.
+	WindowManager.LayoutParams params; // layoutParams where i set the image height/width and other.
 	WindowManager.LayoutParams paramsF;
 	int initialX;
 	int initialY;
