@@ -6,5 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
+    <string name="guide">You Can Drag The Image AnyWhere, Click on it, double click on it and long press on it</string>
 
 </resources>
