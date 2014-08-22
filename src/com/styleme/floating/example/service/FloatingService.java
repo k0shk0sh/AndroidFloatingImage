@@ -25,8 +25,6 @@ public class FloatingService extends Service {
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-		floatingImage.setImageResource(0); // removing the imageView
-		// P.S this isn't an efficient way to remove the imageView, but for the
-		// sake of the tutorial we just gonna use this.
+		floatingImage.destroy(); //  now its an efficient way to destroy the imageView
 	}
 }

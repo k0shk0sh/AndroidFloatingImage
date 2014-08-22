@@ -122,4 +122,12 @@ public class FloatingImage extends ImageView implements OnTouchListener {
 			Toast.makeText(ctx, "Hi You Long Tap Me", Toast.LENGTH_SHORT).show();
 		}
 	}
+	/**
+	 * return [Remove the FloatingImage from the windowManager]
+	 */
+	public void destroy(){
+		if(windowManager != null){ // if the image still exists on the WindowManager release it.
+			windowManager.removeView(this); // remove the ImageView
+		}
+	}
 }
